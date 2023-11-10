@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty Film</title>
+    <link rel="stylesheet" href="/src/css/output.css">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/input.css">
+    <link rel="icon" href="/src/images/icon.jpg">
+</head>
+<body class="max-h-full  bg-[#010626]">
+
+
+<div class="drawer justify-start lg:justify-center">
+  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
+  <div class="drawer-content flex flex-col ">
+    <!-- Navbar -->
+    <div class="w-full navbar  lg:bg-transparent bg-[#010626] ">
+      <div class="flex-none lg:hidden">
+        <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </label>
+      </div> 
+      <div class="flex-1 px-2 mx-2">
+        <img 
+        src="https://th.bing.com/th/id/OIG.mEgv91cA3cbtZR3mJf58?pid=ImgGn"
+        width="75"
+        height="50"
+        class="p-1"
+        alt="Rz Codes Logo"
+      />
+    </a>
+    
+      </div>
+      <div class="flex-none hidden lg:block">
+        <ul class="menu bg-transparent menu-horizontal gap-4 ">
+          <!-- Navbar menu content here -->
+          <li class="font-bold text-lg rounded-[50px] overflow-hidden  transition-all duration-400 ease-in-out shadow-md hover:scale-105 active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-900 before:to-blue-800 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-[50px] hover:before:left-0">
+            <div >
+              <span class=" pt-1"><box-icon name='home' color='#146bf9' ></box-icon></span>
+              <a href="http://127.0.0.1:5500/src/pages/index.html">INICIO</a>
+            </div>
+          </li>
+
+
+
+          <li class="font-bold text-lg  rounded-[50px] overflow-hidden  transition-all duration-400 ease-in-out shadow-md hover:scale-105  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r  before:from-blue-900 before:to-blue-800 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-[50px] hover:before:left-0">
+            <div>
+              <span class="pt-1"><box-icon name='camera-movie' color='#146bf9'></box-icon></span>
+              <a href="http://127.0.0.1:5500/src/pages/peliculas.html">PELÍCULAS</a>
+            </div>
+          </li>
+          <li class="font-bold text-lg  rounded-[50px] overflow-hidden  transition-all duration-400 ease-in-out shadow-md hover:scale-105  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r  before:from-blue-900 before:to-blue-800 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-[50px] hover:before:left-0">
+            <div>
+              <span class="pt-1"><box-icon name='camera-movie' color='#146bf9'></box-icon></span>
+              <a href="/src/enlaces/ablibertyfilm.html">LIBERTY FILM</a>
+            </div>  
+          </li>
+
+          <li class="flex-row-reverse w-80 items-center  ">
+            <input type="text" id="searchInput" class=" bg-transparent border h-10 border-blue-800  w-full rounded-full text-xl" placeholder="Buscar... ">
+            <button class=" absolute text-lg h-10  active:bg-black transition-all ease-in-out duration-300 hover:text-white rounded-full hover:bg-blue-500 bg-blue-900"><box-icon name='search' ></box-icon></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Page content here -->
+
+  </div> 
+  <div class="drawer-side z-10   ">
+    <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label> 
+    <ul class="menu p-4 w-80 min-h-full  bg-[#010626]">
+      <!-- Sidebar content here -->
+      <li class="font-bold text-lg rounded-[50px] overflow-hidden  transition-all duration-400 ease-in-out shadow-md hover:scale-105 active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-900 before:to-blue-800 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-[50px] hover:before:left-0">
+        <div >
+          <span class=" pt-1"><box-icon name='home' color='#146bf9' ></box-icon></span>
+          <a href="">INICIO</a>
+        </div>
+      </li>
+
+
+
+      <li class="font-bold text-lg  rounded-[50px] overflow-hidden  transition-all duration-400 ease-in-out shadow-md hover:scale-105  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r  before:from-blue-900 before:to-blue-800 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-[50px] hover:before:left-0">
+        <div>
+          <span class="pt-1"><box-icon name='camera-movie' color='#146bf9'></box-icon></span>
+          <a href="http://127.0.0.1:5500/src/pages/peliculas.html">PELÍCULAS</a>
+        </div>
+      </li>
+      <li class="font-bold text-lg  rounded-[50px] overflow-hidden  transition-all duration-400 ease-in-out shadow-md hover:scale-105  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r  before:from-blue-900 before:to-blue-800 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-[50px] hover:before:left-0">
+        <div>
+          <span class="pt-1"><box-icon name='slideshow' color='#146bf9' ></box-icon></span>
+          <a href="">LIBERTY FILM</a>
+        </div>
+      </li>
+      <li class="font-bold text-lg  rounded-[50px] overflow-hidden  transition-all duration-400 ease-in-out shadow-md hover:scale-105  active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r  before:from-blue-900 before:to-blue-800 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-[50px] hover:before:left-0">
+        <div>
+          <span class="pt-1"><box-icon name='camera-movie' color='#146bf9'></box-icon></span>
+          <a href="http://127.0.0.1:5500/src/pages/peliculas.html"></a>
+        </div>
+      </li>
+     
+      <li class="flex-row-reverse w-72 items-center  ">
+        <input type="text" id="searchInput" class=" bg-transparent border h-10 border-blue-800  w-full rounded-full text-xl" placeholder="Buscar... ">
+        <button id="searchButton" class=" absolute text-lg h-10  active:bg-black transition-all ease-in-out duration-300 hover:text-white rounded-full hover:bg-blue-500 bg-blue-900"><box-icon name='search' ></box-icon></button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="carousel bg-black   w-full  ">
+    <div id="slide1" class="carousel-item    relative w-full">
+      <img src="/src/images/WICK.jpg" class="w-full" />
+      <div class="absolute h-full flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide4" class="btn btn-circle bg-transparent border-none">❮</a> 
+        <div class="w-full flex flex-col ml-5 justify-center  ">
+          <img class="w-80 mb-5" src="/src/images/titulos/tt.png" alt="">
+          <div class="flex   pb-4">
+            <h1 class="pr-2  text-sm">ACCIÓN</h1>
+            <span><box-icon name='calendar-star' class="w-3 pb-1 lg:w-5" color='#ffffff'> ></box-icon></span>
+            <span class="pr-2 text-sm">2023</span>
+            <span><box-icon name='time-five' class="w-3 pb-1 lg:w-5" color='#ffffff'  ></box-icon></span>
+            <span class="text-sm">2h 49m</span>
+          </div>
+          <div class="flex w-44 gap-2">
+            <button class="btn bg-red-700 w-20 lg:w-32 text-xs lg:text-md  text-white"><a href="/src/sinopsis/johnwick.html">Ver tráiler</a></button>
+            <div class="rating   items-center rounded-lg bg-[#010626] p-3 ">
+              <input type="radio" name="rating-3" class="mask mask-heart bg-white hover:bg-red-700" />
+            </div>
+          </div>
+        </div>
+        <a href="#slide2" class="btn btn-circle bg-transparent border-none">❯</a>
+        
+      </div>
+
+
+
+ 
+
+    </div> 
+    <div id="slide2" class="carousel-item relative w-full">
+      <img src="/src/images/Banner-miles.jpg" class="w-full" />
+      <div class="absolute h-full flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" class="btn btn-circle bg-transparent border-none">❮</a> 
+        <div class="w-full flex flex-col ml-5 justify-center h-full ">
+          <h1 class="text-white lg:text-6xl text-lg pb-4">SPIDER-MAN <br>INTO THE SPIDER-VERSE </h1>
+          <div class="flex  pb-4">
+            <h1 class="pr-2  text-sm">ACCIÓN</h1>
+            <span><box-icon name='calendar-star' class="w-3 pb-1 lg:w-5" color='#ffffff'> ></box-icon></span>
+            <span class="pr-2 text-sm">2023</span>
+            <span><box-icon name='time-five' class="w-3 pb-1 lg:w-5" color='#ffffff'  ></box-icon></span>
+            <span class="text-sm">2h 49m</span>
+          </div>
+          <div class="flex w-44 gap-2">
+            
+            <button class="btn bg-red-700 w-20 lg:w-32 text-xs lg:text-md  text-white"> <a href="/src/sinopsis/spiderman.html">Ver tráiler</a></button>
+            <div class="rating   items-center rounded-lg bg-[#010626] p-3 ">
+              <input type="radio" name="rating-3" class="mask mask-heart bg-white hover:bg-red-700" />
+            </div>
+          </div>
+        </div> 
+        <a href="#slide3" class="btn btn-circle bg-transparent border-none">❯</a>
+      </div>
+    </div> 
+    
+
+    <div id="slide3" class="carousel-item relative w-full">
+      <img src="/src/images/Banner-heimer.jpg" class="w-full" />
+      <div class="absolute  h-full flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide2" class="btn btn-circle bg-transparent border-none">❮</a> 
+        <div class="w-full flex flex-col ml-5 justify-center h-full ">
+          <h1 class="text-white text-6xl pb-4">OPPENHEIMER</h1>
+          <div class="flex gap-1 pb-4">
+            <h1 class="pr-2">ACCIÓN</h1>
+            <span><box-icon name='calendar-star' class="w-5" color='#ffffff'> ></box-icon></span>
+            <h1 class="pr-2">2023</h1>
+            <span><box-icon name='time-five' class="w-5" color='#ffffff'  ></box-icon></span>
+            <p>2h 49m</p>
+          </div>
+          <div class="flex w-44 justify-between">
+            <button class="btn bg-red-700 text-white"><a href="/src/sinopsis/oppenheimer.html">Ver película</a></button>
+            <div class="rating gap-1  items-center rounded-lg bg-[#010626]  p-3">
+              <input type="radio" name="rating-3" class="mask mask-heart bg-white hover:bg-red-700" />
+            </div>
+          </div>
+        </div>   
+        <a href="#slide1" class="btn btn-circle  bg-transparent border-none">❯</a>
+      </div>
+    </div> 
+
+
+   
+  </div>
+
+
+
+
+  <div class="cardsContainer bg-transparent">
+
+    <div class=" separador bg-transparent hover:bg w-full pt-10  text-center">
+      <h2 class="text-2xl">POPULARES</h2>
+      <hr class="my-7 h-px border-t-0 bg-transparent  bg-gradient-to-r from-transparent via-red-700 to-transparent opacity-25 dark:opacity-100" />
+    </div>
+    <div  class="carousel    p-4 py-7 w-full rounded-box ">
+      
+      <div class="carousel-item px-4">
+        <div class="card card-side card-config ">
+            <figure ><img class="w-48" src="/src/images/VENOM.jpg" alt="Movie"/></figure>
+            <div class="card-body justify-between ">
+              <h2 class="font-bold text-md lg:text-lg">VENOM 2: <br> LET THERE BE <br> CARNAGE</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary"><a href="/src/sinopsis/venom.html">ver película</a></button>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="carousel-item px-4 ">
+        <div class="card card-side card-config ">
+            <figure ><img class="w-48" src="/src/images/openjaime.jpg" alt="Movie"/></figure>
+            <div class="card-body justify-between ">
+              <h2 class="font-bold text-lg">OPPENHEIMER</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary"> <a href="/src/sinopsis/oppenheimer.html">ver película</a> </button>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="carousel-item px-4 ">
+        <div class="card card-side card-config">
+            <figure class="bg-black"><img class="w-48" src="/src/images/SAWX.jpg" alt="Movie"/></figure>
+            <div class="card-body justify-between ">
+              <h2 class="font-bold text-lg">SAW: X</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary"> <a href="/src/sinopsis/sawx.html"> ver película</a></button>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="carousel-item px-4 ">
+        <div class="card card-side card-config ">
+            <figure class="w-full"><img class="w-48" src="/src/images/interesttelar.jpg" alt="Movie"/></figure>
+            <div class="card-body  justify-between ">
+              <h2 class="font-bold ">INTERESTELLAR</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary">ver película</button>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="carousel-item px-4 ">
+        <div class="card card-side card-config">
+            <figure class="ml-0"><img class="w-48" src="/src/images/DJANGO.jpg" alt="Movie"/></figure>
+            <div class="card-body justify-between ">
+              <h2 class="font-bold ">DJANGO</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary"><a href="/src/pages/Sinopsis2.html">ver película</a> </button>
+              </div>
+            </div>
+          </div>
+      </div> 
+    </div>
+    <div  class="carousel    p-4 py-7 w-full rounded-box ">
+      <div class="carousel-item px-4 ">
+        <div class="card card-side card-config ">
+            <figure ><img class="w-48" src="/src/images/MARIO.jpg" alt="Movie"/></figure>
+            <div class="card-body justify-between ">
+              <h2 class="font-bold  lg:text-lg">SUPER MARIO<br>BROS: MOVIE</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary"><a href="/src/sinopsis/Sinopsis2.html">ver película</a></button>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="carousel-item px-4 ">
+        <div class="card card-side card-config ">
+            <figure ><img class="w-48" src="/src/images/SHUTTER ISLAND.jpg" alt="Movie"/></figure>
+            <div class="card-body justify-between ">
+              <h2 class="font-bold text-lg">SHUTTER <br> ISLAND</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary"><a href="/src/sinopsis/shutterisland.html">ver película</a></button>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="carousel-item px-4 ">
+        <div class="card card-side card-config">
+            <figure class="bg-black"><img class="w-48" src="/src/images/monja2.jpg" alt="Movie"/></figure>
+            <div class="card-body justify-between ">
+              <h2 class="font-bold text-lg">LA MONJA 2</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary"><a href="/src/sinopsis/lamonja2.html">ver película</a></button>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="carousel-item px-4 ">
+        <div class="card card-side card-config">
+            <figure class=""><img class="w-48" src="/src/images/Spiderman.jpg" alt="Movie"/></figure>
+            <div class="card-body  justify-between ">
+              <h2 class="font-bold ">SPIDER-MAN <br>ACROSS THE <br> SPIDER-VERSE</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary">ver película</button>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="carousel-item px-4 ">
+        <div class="card card-side card-config">
+            <figure class="ml-0"><img class="w-48" src="/src/images/barbie-card.jpg" alt="Movie"/></figure>
+            <div class="card-body justify-between ">
+              <h2 class="font-bold ">BARBIE</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary">ver película</button>
+              </div>
+            </div>
+          </div>
+      </div> 
+    </div>
+  
+  
+    <div class="separador w-full pt-10  text-center">
+      <h1 class="text-2xl">PODRÍA INTERESARTE</h1>
+      <hr class="my-7 h-px border-t-0 bg-transparent  bg-gradient-to-r from-transparent via-red-700 to-transparent opacity-25 dark:opacity-100" />
+    </div>
+    <div  class="carousel    p-10 w-full rounded-box ">
+      <div class="carousel-item px-4 ">
+        <div class="card card-side card-config ">
+            <figure ><img class="w-48" src="/src/images/wick-card.jpg" alt="Movie"/></figure>
+            <div class="card-body justify-between ">
+              <h2 class="font-bold text-lg">JOHN WICK 4</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary"><a href="/src/sinopsis/johnwick.html">ver película</a></button>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="carousel-item px-4 ">
+        <div class="card card-side card-config">
+            <figure ><img class="w-48" src="https://cdn.gamma.app/xr2tfdgv1g4hx5j/cdae531699be40f2ac57887ce93d271e/original/qO0L1PzZCmqhRrYUuPvGXdysMdG.jpg" alt="Movie"/></figure>
+            <div class="card-body justify-between ">
+              <h2 class="font-bold text-lg">HÁBLAME</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary"><a href="/src/sinopsis/hablame.html">ver película</a></button>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="carousel-item px-4 ">
+        <div class="card card-side card-config">
+            <figure class="bg-black"><img class="w-48" src="/src/images/m-imposible-card.jpg" alt="Movie"/></figure>
+            <div class="card-body justify-between ">
+              <h2 class="font-bold text-lg">MISION IMPOSIBLE</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary">ver película</button>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="carousel-item px-4 ">
+        <div class="card card-side card-config">
+            <figure class=""><img class="w-48" src="/src/images/theboyandheron-card.jpg" alt="Movie"/></figure>
+            <div class="card-body  justify-between ">
+              <h2 class="font-bold text-lg ">THE BOY AND <br> HERON</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary">ver película</button>
+              </div>
+            </div>
+          </div>
+      </div> 
+      <div class="carousel-item px-4 ">
+        <div class="card card-side card-config">
+            <figure class="ml-0"><img class="w-48" src="/src/images/DJANGO.jpg" alt="Movie"/></figure>
+            <div class="card-body justify-between ">
+              <h2 class="card-title ">DJANGO</h2>
+              <div class="card-actions ">
+                <button class="btn  btn-primary">ver película</button>
+              </div>
+            </div>
+          </div>
+      </div> 
+    </div>
+  
+  
+    <div class="separador w-full pt-10  text-center">
+      <h1 class="text-2xl">PRÓXIMAMENTE</h1>
+      <hr class="my-7 h-px border-t-0 bg-transparent  bg-gradient-to-r from-transparent via-red-700 to-transparent opacity-25 dark:opacity-100" />
+    </div>
+    <div class="carousel py-5 w-full  justify-between lg:pl-0 lg:justify-center gap-2 ">
+      <div class="carousel-item pl-4 lg:pl-0 ">
+        <div class="flex-col card  text-center  ">
+          <img class="w-60 rounded-md" src="https://www.elseptimoarte.net/carteles/341/vive_dentro_99107.jpg" alt="">
+          <div class="text-white"> 
+            <h2 class="font-bold text-lg text-white">
+              VIVE DENTRO
+            </h2>
+            <span>140min</span> | <span>Terror</span>
+          </div>
+        </div>
+      </div> 
+      <div class="carousel-item ">
+        <div class="flex-col card text-center  ">
+          <img class="w-60 rounded-md" src="https://www.elseptimoarte.net/carteles/341/ferrari_99414.jpg" alt="">
+          <div class="text-white"> 
+            <h2 class="font-bold text-lg text-white">
+              FERRARI
+            </h2>
+            <span>135min</span> | <span>Suspenso</span>
+          </div>
+        </div>
+      </div> 
+      <div class="carousel-item  ">
+        <div class="flex-col card text-center  ">
+          <img class="w-60 rounded-md" src="https://www.elseptimoarte.net/carteles/341/the_iron_claw_99320.jpg" alt="">
+          <div class="text-white"> 
+            <h2 class="font-bold text-lg text-white">
+              THE IRON CLAW
+            </h2>
+            <span>115min</span> | <span>Acción</span>
+          </div>
+        </div>
+      </div> 
+      <div class="carousel-item  ">
+        <div class="flex-col card text-center  ">
+          <img class="w-60 rounded-md" src="https://www.elseptimoarte.net/carteles/341/inseparables_97615.jpg" alt="">
+          <div class="text-white"> 
+            <h2 class="font-bold text-lg text-white">
+              INSEPARABLES
+            </h2>
+            <span>150min</span> | <span>Animadas</span>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item  ">
+        <div class="flex-col card text-center  ">
+          <img class="w-56 rounded-md" src="https://www.elseptimoarte.net/carteles/341/nefarious_97324.jpg" alt="">
+          <div class="text-white"> 
+            <h2 class="font-bold text-lg text-white">
+              NEFARIUS
+            </h2>
+            <span>100min</span> | <span>Terror</span>
+          </div>
+        </div>
+      </div> 
+    </div>
+   </div>
+
+ 
+
+
+
+ <footer class="w-full border-t-1  p-8">-
+  <div class="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center ">
+ 
+    <ul class="flex flex-wrap items-center gap-y-2 gap-x-8">
+      <li>
+        <a
+          href="#"
+          class="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-red-700"
+          >
+        <img src="https://th.bing.com/th/id/OIG.mEgv91cA3cbtZR3mJf58?pid=ImgGn" alt="logo-ct" class="w-24" />
+        </a>
+      </li>
+      <li>
+        <a
+        href="#"
+          class="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-red-700"
+        >
+          About Us
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-red-700"
+        >
+          License
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-red-700"
+          >
+          Contribute
+        </a>
+      </li>
+      <li>
+        <a
+        href="#"
+          class="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased transition-colors hover:text-pink-500 focus:text-red-500"
+        >
+        Contact Us
+      </a>
+      </li>
+    </ul>
+  </div>
+  <hr class="my-8 border-blue-gray-50" />
+  <p class="block text-center font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
+    © 2023 Liberty Film
+  </p>
+</footer>
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="/src/js/busquedas.js"></script>
+
+</body>
+</html>
